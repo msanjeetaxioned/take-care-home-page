@@ -212,4 +212,90 @@ header h1 img {
 .languages__button.selected {
   color: #6d6f8f;
 }
+
+.title-quote {
+  padding: 40px 0;
+  background: #5d058d;
+  color: #fff;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel {
+  font-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel > li {
+  display: inline-block;
+  position: relative;
+}
+
+.carousel > li > div {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: normal;
+}
+
+.carousel div > blockquote {
+  margin-bottom: 15px;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.carousel div > span {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+}
+
+.carousel-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.carousel-dots__item {
+  margin-right: 15px;
+}
+
+.carousel-dots__item:last-child {
+  margin-right: 0;
+}
+
+.carousel-dots__button {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: block;
+  font-size: 0;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.carousel-dots__button:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.carousel-dots__button.selected {
+  background: #fff;
+}
 /*# sourceMappingURL=take-care.css.map */

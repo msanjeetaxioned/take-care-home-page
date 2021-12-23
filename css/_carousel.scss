@@ -1,0 +1,64 @@
+.carousel-container {
+    position: relative;
+}
+
+.carousel {
+    font-size: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    > li {
+        display: inline-block;
+        position: relative;
+        > div {
+            width: 75%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: returnMap($colors, color3);
+            transform: translate(-50%, -50%);
+            white-space: normal;
+        }
+    }
+    div {
+        > blockquote {
+            margin-bottom: 15px;
+            font-size: 36px;
+            line-height: 48px;
+        }
+        > span {
+            display: block;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+}
+
+.carousel-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%, 0);
+    &__item {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__button {
+        width: 12px;
+        height: 12px;
+        border: 1px solid returnMap($colors, color3);
+        border-radius: 50%;
+        display: block;
+        font-size: 0;
+        transition: background 1s ease-in-out;
+        &:hover {
+            background: returnMap($colors, color3);
+            cursor: pointer;
+        }
+        &.selected {
+            background: returnMap($colors, color3);
+        }
+    }
+}
