@@ -424,4 +424,196 @@ header h1 img {
 .take-care-campaign {
   margin: 95px 0 100px 0;
 }
+
+footer {
+  background: #e8e8e8;
+}
+
+.footer-links {
+  padding: 30px 0;
+  border-bottom: 1px solid #ae9da3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-links > * {
+  border-right: 1px solid #ae9da3;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.footer-links > *:nth-child(even) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.footer-links > *:last-child {
+  border-right: none;
+}
+
+.footer-logos {
+  padding-right: 5%;
+}
+
+.footer-logos > span {
+  margin: 10px 0 15px 0;
+  display: block;
+  color: #3d3e42;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-footer__list {
+  padding: 0 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.nav-footer__item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.nav-footer__link {
+  color: #6d6f8f;
+  font-size: 12px;
+  text-transform: capitalize;
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+
+.nav-footer__link:hover {
+  color: #3badf2;
+}
+
+.nav-footer__link.selected {
+  color: #3badf2;
+}
+
+.follow-us > h4, .contact-us > h4 {
+  padding: 0 25%;
+  margin-bottom: 15px;
+  color: #3d3e42;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.follow-us-links {
+  padding: 0 25%;
+}
+
+.follow-us-links__item {
+  margin-bottom: 10px;
+}
+
+.follow-us-links__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #6d6f8f;
+  font-size: 12px;
+  text-transform: capitalize;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+
+.follow-us-links__link:hover {
+  color: #3badf2;
+}
+
+.follow-us-links__link[title="Facebook"]::before {
+  content: "\f39e";
+}
+
+.follow-us-links__link[title="YouTube"]::before {
+  content: "\f167";
+}
+
+.follow-us-links__link[title="Twitter"]::before {
+  content: "\f099";
+}
+
+.contact-us > * {
+  margin: 0 15%;
+}
+
+.contact-us > h4 {
+  padding: 0;
+}
+
+.contact-us > p {
+  margin-bottom: 15px;
+  color: #6d6f8f;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.contact-us-links__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #6d6f8f;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+
+.contact-us-links__link:hover {
+  color: #3badf2;
+}
+
+.contact-us-links__link[title="Email"]::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+}
+
+.copyright-info {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.copyright-info > span {
+  color: #6d6f8f;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.copyright-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.copyright-links__item {
+  margin-right: 30px;
+}
+
+.copyright-links__item:last-child {
+  margin-right: 0;
+}
+
+.copyright-links__link {
+  color: #6d6f8f;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=take-care.css.map */
