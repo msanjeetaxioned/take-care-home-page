@@ -30,6 +30,12 @@ a {
     width: 37.98%;
     min-width: 500px;
     margin: 0 auto;
+    @include mobile {
+        max-width: unset;
+        width: 100%;
+        min-width: unset;
+        margin: 0;
+    }
 }
 
 .common-style {
@@ -39,6 +45,9 @@ a {
         color: returnMap($colors, color5);
         font-size: 46px;
         font-weight: bold;
+        @include mobile {
+            font-size: 30px;
+        }
     }
     > p {
         color: returnMap($colors, color1);
@@ -58,6 +67,10 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     transition: background 1s ease-in-out;
+    @include mobile {
+        padding: 15px 25px;
+        font-size: 18px;
+    }
     &:hover {
         background: returnMap($colors, color4);
     }

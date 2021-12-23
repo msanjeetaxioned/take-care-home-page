@@ -1,5 +1,8 @@
 .take-care-films {
     margin: 90px 0 100px 0;
+    @include mobile {
+        margin: 75px 5.33%;
+    }
     > .button-container {
         text-align: center;
     }
@@ -10,14 +13,24 @@
     width: 50%;
     min-width: 650px;
     margin: 35px auto 10px auto;
+    @include mobile {
+        width: 100%;
+        min-width: unset;
+    }
     &__item {
         margin-bottom: 40px;
         display: flex;
+        @include mobile {
+            flex-direction: column;
+        }
         &:last-child {
             margin-bottom: 0;
         }
         > * {
             flex: 1;
+            @include mobile {
+                flex: unset;
+            }
         }
     }
     figure {
@@ -25,6 +38,11 @@
             max-height: unset;
             height: 100%;
             object-fit: fill;
+            @include mobile {
+                max-width: unset;
+                width: 100%;
+                object-fit: contain;
+            }
         }
     }
     div {
@@ -36,6 +54,10 @@
             color: returnMap($colors, color5);
             font-size: 32px;
             font-weight: bold;
+            @include mobile {
+                margin: 15px 3% 15px 3%;
+                font-size: 26px;
+            }
         }
         > p {
             margin: 0 5% 35px 5%;
