@@ -1,5 +1,10 @@
 $fontFamily: Arial, Helvetica, sans-serif;
 
+$breakpoints: (
+    tablet: 1023px,
+    mobile: 767px
+);
+
 $colors: (
     color1: rgba(109, 111, 143, 1),
     color2: rgba(174, 157, 163, 1),
@@ -19,4 +24,16 @@ $colors: (
 /// @return {string} 'value' of the 'key' of the 'Object'.
 @function returnMap($mapName, $keyName) {
     @return map-get($map: $mapName, $key: $keyName);
+}
+
+@mixin tablet {
+    @media (max-width: #{returnMap($breakpoints, tablet)}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{returnMap($breakpoints, mobile)}) {
+        @content;
+    }
 }
