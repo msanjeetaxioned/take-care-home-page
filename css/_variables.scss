@@ -1,0 +1,22 @@
+$fontFamily: Arial, Helvetica, sans-serif;
+
+$colors: (
+    color1: rgba(109, 111, 143, 1),
+    color2: rgba(174, 157, 163, 1),
+    color3: #fff,
+    color4: #5d058d,
+    color5: rgba(61, 62, 66, 1),
+    color6: #e8e8e8,
+    color7: #3badf2
+);
+
+// Returns given Object key's value.
+///
+/// @param {string} $mapName
+///   The Object Name.
+/// @param {string} $keyName
+///   The 'key' of the Object.
+/// @return {string} 'value' of the 'key' of the 'Object'.
+@function returnMap($mapName, $keyName) {
+    @return map-get($map: $mapName, $key: $keyName);
+}

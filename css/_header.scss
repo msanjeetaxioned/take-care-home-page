@@ -1,0 +1,101 @@
+header {
+    .header-footer-wrapper {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        > h1 {
+            flex-basis: 17.28%;
+        }
+        > .hamburger-mobile {
+            display: none;
+        }
+    }
+    h1 {
+        img {
+            max-width: 200px;
+        }
+    }
+}
+
+.page {
+    flex-grow: 1;
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin-right: 6.05%;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.selected {
+            &__link {
+                color: returnMap($colors, color7);
+            }
+        }
+    }
+    &__link {
+        display: inline-block;
+        color: returnMap($colors, color1);
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: color 1s ease-in-out;
+        &:hover {
+            color: returnMap($colors, color7);
+        }
+    }
+}
+
+.header-social {
+    margin-bottom: 10px;
+    display: flex;
+    &__item {
+        &:last-child {
+            &__link {
+                margin-right: 0;
+            }
+        }
+    }
+    &__link {
+        font-size: 0;
+        &[title="Facebook"]::before {
+            content: "\f39e";
+        }
+        &[title="YouTube"]::before {
+            content: "\f167";
+        }
+        &[title="Twitter"]::before {
+            content: "\f099";
+        }
+    }
+}
+
+.languages {
+    display: flex;
+    &__item {
+        &::after {
+            content: "/";
+            margin: 0 5px;
+            color: returnMap($colors, color2);
+            font-size: 12px;
+        }
+        &:last-child::after{
+            content: "";
+            margin: 0;
+        }
+    }
+    &__button {
+        display: inline-block;
+        color: returnMap($colors, color2);
+        font-size: 14px;
+        transition: color 1s ease-in-out;
+        text-transform: capitalize;
+        &:hover {
+            color: returnMap($colors, color1);
+            cursor: pointer;
+        }
+        &.selected {
+            color: returnMap($colors, color1);
+        }
+    }
+}

@@ -1,0 +1,75 @@
+* { box-sizing: border-box; }
+body { font-family: $fontFamily; }
+
+figure {
+    > img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        object-fit: contain;
+    }
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.header-footer-wrapper {
+    max-width: 1460px;
+    width: 76.17%;
+    margin: 0 auto;
+}
+
+.common-style-wrapper {
+    max-width: 729px;
+    width: 37.98%;
+    min-width: 450px;
+    margin: 0 auto;
+}
+
+.common-style {
+    > h2 {
+        margin-bottom: 20px;
+        color: returnMap($colors, color5);
+        font-size: 46px;
+        font-weight: bold;
+    }
+    > p {
+        color: returnMap($colors, color1);
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.common-button {
+    padding: 15px 35px;
+    border-radius: 50%;
+    background: returnMap($colors, color7);
+    color: returnMap($colors, color3);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 1s ease-in-out;
+    &:hover {
+        background: returnMap($colors, color4);
+    }
+}
+
+.circle-social-icon {
+    display: block;
+    &::before {
+        width: 24px;
+        height: 24px;
+        border: 1px solid returnMap($colors, color2);
+        border-radius: 50%;
+        margin-right: 15px;
+        display: flex;
+        color: returnMap($colors, color1);
+        font-family: "Font Awesome 5 Brands";
+        font-size: 14px;
+        font-weight: 900;
+        justify-content: center;
+        align-items: center;
+    }
+}
