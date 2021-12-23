@@ -170,12 +170,20 @@ header h1 img {
   display: flex;
 }
 
-.header-social__item:last-child__link {
+.header-social__item {
+  margin-right: 15px;
+}
+
+.header-social__item:last-child {
   margin-right: 0;
 }
 
 .header-social__link {
   font-size: 0;
+}
+
+.header-social__link::before {
+  margin-right: 0;
 }
 
 .header-social__link[title="Facebook"]::before {

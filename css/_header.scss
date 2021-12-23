@@ -50,14 +50,16 @@ header {
     margin-bottom: 10px;
     display: flex;
     &__item {
+        margin-right: 15px;
         &:last-child {
-            &__link {
-                margin-right: 0;
-            }
+            margin-right: 0;
         }
     }
     &__link {
         font-size: 0;
+        &::before {
+            margin-right: 0;
+        }
         &[title="Facebook"]::before {
             content: "\f39e";
         }
