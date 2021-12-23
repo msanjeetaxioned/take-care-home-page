@@ -74,5 +74,10 @@ a {
         font-weight: 900;
         justify-content: center;
         align-items: center;
+        transition: border 1s ease-in-out, color 1s ease-in-out;
+    }
+    &:hover::before {
+        border: 1px solid returnMap($colors, color7);
+        color: returnMap($colors, color7);
     }
 }
