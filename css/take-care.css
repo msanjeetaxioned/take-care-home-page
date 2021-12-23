@@ -33,6 +33,10 @@ a {
   margin: 0 auto;
 }
 
+.common-style {
+  text-align: center;
+}
+
 .common-style > h2 {
   margin-bottom: 15px;
   color: #3d3e42;
@@ -393,7 +397,6 @@ header h1 img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .health-reflection-tool .common-style > h2 {
@@ -402,5 +405,9 @@ header h1 img {
 
 .health-reflection-tool .common-style > p {
   color: #fff;
+}
+
+.take-care-campaign {
+  margin: 95px 0 100px 0;
 }
 /*# sourceMappingURL=take-care.css.map */

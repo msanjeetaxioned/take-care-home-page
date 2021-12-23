@@ -29,6 +29,7 @@ a {
 }
 
 .common-style {
+    text-align: center;
     > h2 {
         margin-bottom: 15px;
         color: returnMap($colors, color5);
