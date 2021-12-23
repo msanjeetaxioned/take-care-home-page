@@ -250,6 +250,11 @@ header h1 img {
   position: relative;
 }
 
+.carousel > li img {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
 .carousel > li > div {
   width: 75%;
   position: absolute;
@@ -396,6 +401,8 @@ header h1 img {
   width: 100%;
   max-height: unset;
   height: 100%;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 .health-reflection-tool .common-style {

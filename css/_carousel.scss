@@ -9,6 +9,9 @@
     > li {
         display: inline-block;
         position: relative;
+        img {
+            filter: brightness(70%);
+        }
         > div {
             width: 75%;
             position: absolute;
