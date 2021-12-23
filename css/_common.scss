@@ -30,7 +30,7 @@ a {
 
 .common-style {
     > h2 {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         color: returnMap($colors, color5);
         font-size: 46px;
         font-weight: bold;
@@ -44,10 +44,11 @@ a {
 
 .common-button {
     padding: 15px 35px;
-    border-radius: 50%;
+    border-radius: 50px;
+    display: inline-block;
     background: returnMap($colors, color7);
     color: returnMap($colors, color3);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     transition: background 1s ease-in-out;

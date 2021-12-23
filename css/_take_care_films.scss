@@ -1,0 +1,55 @@
+.take-care-films {
+    margin: 90px 0 100px 0;
+    > .button-container {
+        text-align: center;
+    }
+}
+
+.take-care-videos {
+    max-width: 960px;
+    width: 50%;
+    margin: 35px auto 40px auto;
+    &__item {
+        margin-bottom: 40px;
+        display: flex;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        > * {
+            flex: 1;
+        }
+    }
+    figure {
+        > img {
+            max-height: unset;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+    div {
+        display: flex;
+        background: returnMap($colors, color6);
+        flex-direction: column;
+        > h3 {
+            margin: 35px 5% 25px 5%;
+            color: returnMap($colors, color5);
+            font-size: 32px;
+            font-weight: bold;
+        }
+        > p {
+            margin: 0 5% 35px 5%;
+            color: returnMap($colors, color1);
+            font-size: 16px;
+            line-height: 26px;
+        }
+        q {
+            quotes: auto;
+            &::before {
+                content: open-quote;
+            }
+            &::after {
+                content: close-quote;
+            }
+        }
+    }
+}
