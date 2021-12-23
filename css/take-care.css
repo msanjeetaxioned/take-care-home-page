@@ -275,9 +275,18 @@ header h1 img {
 }
 
 .carousel div > blockquote {
+  quotes: auto;
   margin-bottom: 15px;
   font-size: 36px;
   line-height: 48px;
+}
+
+.carousel div > blockquote::before {
+  content: open-quote;
+}
+
+.carousel div > blockquote::after {
+  content: close-quote;
 }
 
 .carousel div > span {

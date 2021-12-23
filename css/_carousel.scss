@@ -24,9 +24,16 @@
     }
     div {
         > blockquote {
+            quotes: auto;
             margin-bottom: 15px;
             font-size: 36px;
             line-height: 48px;
+            &::before {
+                content: open-quote;
+            }
+            &::after {
+                content: close-quote;
+            }
         }
         > span {
             display: block;
