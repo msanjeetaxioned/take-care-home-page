@@ -29,7 +29,7 @@ a {
 .common-style-wrapper {
   max-width: 729px;
   width: 37.98%;
-  min-width: 450px;
+  min-width: 500px;
   margin: 0 auto;
 }
 
@@ -328,6 +328,7 @@ header h1 img {
 .take-care-videos {
   max-width: 960px;
   width: 50%;
+  min-width: 650px;
   margin: 35px auto 10px auto;
 }
 
