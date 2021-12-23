@@ -597,6 +597,15 @@ footer {
   font-weight: bold;
 }
 
+.copyright-info > span > a {
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+
+.copyright-info > span > a:hover {
+  color: #3badf2;
+}
+
 .copyright-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,5 +625,11 @@ footer {
   font-size: 10px;
   font-weight: bold;
   text-transform: capitalize;
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+
+.copyright-links__link:hover {
+  color: #3badf2;
 }
 /*# sourceMappingURL=take-care.css.map */

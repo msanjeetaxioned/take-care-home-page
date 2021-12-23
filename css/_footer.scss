@@ -133,6 +133,12 @@ footer {
         color: returnMap($colors, color1);
         font-size: 10px;
         font-weight: bold;
+        > a {
+            transition: color 1s ease-in-out;
+            &:hover {
+                color: returnMap($colors, color7);
+            }
+        }
     }
 }
 
@@ -149,5 +155,9 @@ footer {
         font-size: 10px;
         font-weight: bold;
         text-transform: capitalize;
+        transition: color 1s ease-in-out;
+        &:hover {
+            color: returnMap($colors, color7);
+        }
     }
 }
